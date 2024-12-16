@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts css -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <title>Examine || 11-lesson</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header__container">
+        <div class="logo">
+          <img src="./img/iconoir_book.svg" alt="Logo image..." />
+        </div>
+        <div class="header__content">
+          <div class="dropdown">
+            <button class="space">
+              <span class="default-font">Sans serif</span>
+              <img src="./img/arrow-down.svg" alt="" />
+            </button>
+            <div class="content">
+              <a href="#" class="font-1" id="fonts" value="sans-serif"
+                >Sans serif</a
+              >
+              <a href="#" class="font-2" id="fonts" value="serif">Serif</a>
+              <a href="#" class="font-3" id="fonts" value="mono">Mono</a>
+            </div>
+          </div>
+          <span style="opacity: 0.2">|</span>
+          <div class="darkmode">
+            <input id="dark-mode" class="switch" type="checkbox" />
+            <img class="moon-img" src="./img/moon.svg" alt="Moon image" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container main__container">
+        <div class="search-box">
+          <input type="search" name="search" id="search" />
+          <img
+            class="search-icon"
+            src="./img/iconoir_search.svg"
+            alt="Search icon..."
+            width="15"
+          />
+        </div>
+
+        <div class="search-content"></div>
+        <!-- Search-content ends -->
+      </div>
+    </div>
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/darkmode.js"></script>
+    <script src="./js/changeFont.js"></script>
+  </body>
+</html>
