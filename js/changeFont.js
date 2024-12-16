@@ -15,8 +15,13 @@ for(let i = 0; i < fonts.length; i++) {
         //     value.style.fontFamily = e.target.attributes.value.value;
         // })
 
-        document.body.classList.remove(...document.body.classList);
-        document.body.classList.add(t, "dark");
+        if (document.body.classList.contains("dark")) {
+            document.body.classList.remove(...document.body.classList);
+            document.body.classList.add(t);
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.add(t);
+        }
 
         defaultFont.textContent = t;
         defaultFont.textContent = fonts[i].textContent;
